@@ -1,0 +1,16 @@
+# Generated dependencies and build output at any exercise depth
+**/node_modules/
+**/dist/
+**/build/
+**/coverage/
+
+# Local environment values; keep documented examples trackable
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+
+# Tool logs and operating-system metadata
+*.log
+.DS_Store
+Thumbs.db
