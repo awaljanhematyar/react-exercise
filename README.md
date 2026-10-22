@@ -29,12 +29,16 @@ Example using the counter:
 
 ```sh
 git clone https://github.com/awaljanhematyar/react-exercise.git
-cd react-exercise/02counter
+cd react-exercise
+npm ci
+cd 02counter
 npm ci
 npm run dev
 ```
 
 Open the address printed by Vite. With this exercise selected, `npm run build`, `npm run preview` and `npm run lint` are available in its package.json.
+
+The first root-level `npm ci` restores shared dependencies, including React Router and Tailwind. Exercise-specific installs then restore each app's own dependencies. Generated `node_modules` directories stay outside Git through the root `.gitignore`.
 
 Use a Node.js version compatible with the selected project. Check its package.json and local README because scripts and tooling differ between exercises. Legacy Create React App and standalone experiments do not share the Vite command set.
 
